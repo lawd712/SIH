@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link rel="stylesheet" href="sih.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Parent Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#academic-overview">Academic Overview</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#report-cards">Report Cards</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#ptm">Virtual PTM</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <img src="./prent.jpg" alt="Profile Picture" class="profile-pic">
+            <h3>Parent Name</h3>
+            <p>Email: parent@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <button class="btn btn-primary" onclick="editProfile()">Edit Profile</button>
+            <div class="notification-bell" onclick="showNotification('You have new notifications!')">
+                <i class="fas fa-bell fa-3x"></i>
+                <span class="notification-badge">3</span>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <section id="academic-overview" class="feature-card animated fadeIn">
+                <h2>Child’s Academic Overview</h2>
+                <img src="./infographic02.jpg" alt="Academic Overview" class="feature-img">
+                <p>View child’s marks and progress reports.</p>
+                <p>Compare performance across subjects and terms.</p>
+                <button class="btn btn-primary" onclick="showNotification('Academic Overview updated!')">Check Updates</button>
+            </section>
+
+            <section id="attendance" class="feature-card animated fadeIn">
+                <h2>Attendance</h2>
+                <img src="./appointment-booking-with-smartphone_23-2148567481.avif" alt="Attendance" class="feature-img">
+                <p>Track child’s attendance record (daily, monthly).</p>
+                <p>Real-time updates if the child is absent or tardy.</p>
+                <button class="btn btn-primary" onclick="showNotification('Attendance record updated!')">Check Attendance</button>
+            </section>
+
+            <section id="assignments" class="feature-card animated fadeIn">
+                <h2>Assignments and Deadlines</h2>
+                <img src="./6892639.jpg" alt="Assignments" class="feature-img">
+                <p>View upcoming assignments and deadlines for their child.</p>
+                <button class="btn btn-primary" onclick="showNotification('New assignments added!')">View Assignments</button>
+            </section>
+
+            <section id="report-cards" class="feature-card animated fadeIn">
+                <h2>Report Cards</h2>
+                <img src="https://via.placeholder.com/400" alt="Report Cards" class="feature-img">
+                <p>Access child’s report cards with teacher remarks.</p>
+                <button class="btn btn-primary" onclick="showNotification('Report card available!')">View Report Cards</button>
+            </section>
+
+            <section id="notifications" class="feature-card animated fadeIn">
+                <h2>Real-Time Notifications</h2>
+                <img src="https://via.placeholder.com/400" alt="Notifications" class="feature-img">
+                <p>Alerts for upcoming PTMs, events, fees, and other important announcements.</p>
+                <button class="btn btn-primary" onclick="showNotification('You have new notifications!')">Check Notifications</button>
+            </section>
+
+            <section id="payments" class="feature-card animated fadeIn">
+                <h2>Payments and Fee Management</h2>
+                <img src="https://via.placeholder.com/400" alt="Payments" class="feature-img">
+                <p>View fee details and payment history.</p>
+                <button class="btn btn-primary" onclick="showNotification('Payment history updated!')">View Payments</button>
+            </section>
+
+            <section id="ptm" class="feature-card animated fadeIn">
+                <h2>Virtual PTM and Community</h2>
+                <img src="./3778209.jpg" alt="PTM" class="feature-img">
+                <p>Schedule and participate in virtual PTMs.</p>
+                <button class="btn btn-primary" onclick="showNotification('PTM scheduled!')">Schedule PTM</button>
+            </section>
+
+            <section id="support" class="feature-card animated fadeIn">
+                <h2>Support and Queries</h2>
+                <img src="./11101979.jpg" alt="Support" class="feature-img">
+                <p>Interface for asking questions to teachers or admins.</p>
+                <button class="btn btn-primary" onclick="showNotification('Query submitted!')">Ask a Question</button>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 School Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="sih.js"></script>
+</body>
+</html>
